@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cisco Certifications - Soham Lokhande</title>
+    <title>Soham Lokhande | Cisco Certifications</title>
 
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #0d1117;
             color: white;
             text-align: center;
-            margin: 0;
-            padding: 20px;
         }
 
         h1 {
-            margin-bottom: 30px;
+            padding: 20px;
         }
 
-        .certificate {
-            margin-bottom: 40px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 12px;
+            width: 85%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
 
         iframe {
-            width: 80%;
+            width: 100%;
             height: 500px;
-            border: 2px solid #30363d;
             border-radius: 10px;
+            border: none;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            background: #2ea043;
         }
     </style>
 </head>
@@ -36,14 +61,28 @@
 
     <h1>My Cisco Certifications</h1>
 
-    <div class="certificate">
-        <h2>Python Essentials 1</h2>
-        <iframe src="Python_Essentials_1_certificate_sohams19005-g.pdf"></iframe>
-    </div>
+    <div class="container">
 
-    <div class="certificate">
-        <h2>Python Essentials 2</h2>
-        <iframe src="Python_Essentials_2_certificate_sohams19005-g.pdf"></iframe>
+        <!-- Certificate 1 -->
+        <div class="card">
+            <h2>Python Essentials 1</h2>
+            <iframe src="Python_Essentials_1_certificate.pdf"></iframe>
+            <br>
+            <a href="Python_Essentials_1_certificate.pdf" target="_blank">
+                Open Full Certificate
+            </a>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="card">
+            <h2>Python Essentials 2</h2>
+            <iframe src="Python_Essentials_2_certificate.pdf"></iframe>
+            <br>
+            <a href="Python_Essentials_2_certificate.pdf" target="_blank">
+                Open Full Certificate
+            </a>
+        </div>
+
     </div>
 
 </body>
